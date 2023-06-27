@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	har *str;
+	char *str;
 
-	tr = "0123456789";
+	str = "0123456789";
 	puts_half(str);
 return (0);
 }

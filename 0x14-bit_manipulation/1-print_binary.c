@@ -1,17 +1,17 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_binary - prints binary representing a number
- * @n: decimal number to be printed as binary
+ * print_binary - prints the binary rep of a no.
+ * @n: - No to convert and print binary
+ *
+ * return - binay repreesantation
  */
-void print_binary that is unsigned long int n
-{
-	unsigned long int temp;
-	int shifts;
 
-	if (n == 0)
+void print_binary(unsigned long int n)
+{
+	if (n > 1)
 	{
-		printf("0");
-		return;
+		print_binary(n >> 1);
 	}
+	_putchar((n & 1) + '0');
+}
